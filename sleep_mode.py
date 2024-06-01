@@ -1,7 +1,7 @@
 import random
 import time
 
-# with replacing the logic in these functions with the embedded code for raspberry pi pico
+# with replacing the logic in these functions with the embedded code for Raspberry Pi Pico
 
 
 class Smartwatch:
