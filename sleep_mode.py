@@ -1,6 +1,9 @@
 import random
 import time
 
+# with replacing the logic in these functions with the embedded code for raspberry pi pico
+
+
 class Smartwatch:
     def __init__(self):
         self.battery_level = 100  # Initialize battery level to 100%
