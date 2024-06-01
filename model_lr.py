@@ -3,6 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import scipy
+import joblib  # Use joblib to save the model
 
 
 # Read the Excel file into a DataFrame
@@ -69,3 +70,9 @@ sc['Logistic Regression']=r
 rn['Logistic Regression']=np.array(np.unique(lrr_pred, return_counts=True))
 print('cross val score:',r)
 '''
+
+# Save the model to a .pkl file
+joblib.dump(lrr, 'stress_detection_model.pkl')
+joblib.dump(scaler, 'scaler.pkl')
+
+# That's it again
