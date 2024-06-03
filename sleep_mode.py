@@ -2,6 +2,8 @@ import random
 import time
 import statistics
 
+# with replacing the logic in these functions with the embedded code for Raspberry Pi Pico
+
 class Smartwatch:
     def __init__(self):
         self.battery_level = 100  # Initialize battery level to 100%
@@ -48,7 +50,7 @@ class Smartwatch:
             accel_variance = sum(statistics.variance([reading[i] for reading in self.accelerometer_readings]) for i in range(3)) / 3
             gyro_variance = sum(statistics.variance([reading[i] for reading in self.gyroscope_readings]) for i in range(3)) / 3
             print(f"Accelerometer Variance: {accel_variance}, Gyroscope Variance: {gyro_variance}")
-            if accel_variance < 30000 and gyro_variance < 30000:  # Adjusted threshold for the range of -300 to 300
+            if accel_variance < 28000 and gyro_variance < 28000:  # Adjusted threshold for the range of -300 to 300
                 return True
         return False
 
