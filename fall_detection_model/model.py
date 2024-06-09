@@ -18,7 +18,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
 # Read the Excel file into a DataFrame
-df_train = pd.read_excel(r'G:\College\Graduation Project\model_deployment\test\acc_gyr.xlsx')
+df_train = pd.read_excel(r'acc_gyr.xlsx')
 
 df_train.head()   #first 5 rows of the data
 
@@ -138,7 +138,7 @@ from sklearn.preprocessing import LabelEncoder
 model = tf.keras.models.load_model('fall_detection_model.h5')
 
 # Load the dataset for scaling and label encoding
-data = pd.read_excel(r'G:\College\Graduation Project\model_deployment\test\acc_gyr.xlsx')
+data = pd.read_excel(r'acc_gyr.xlsx')
 
 # Initialize the scaler and label encoder
 scaler = StandardScaler()
